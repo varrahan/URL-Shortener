@@ -1,0 +1,39 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go build cache
+bin/
+obj/
+*.out
+
+# Vendor folder (optional if you use Go modules)
+vendor/
+
+# IDE/editor files
+*.swp
+*.swo
+*.vscode/
+.idea/
+
+# Git
+.git
+.gitignore
+
+# Environment files
+.env
+
+# Logs
+*.log
+
+# Dockerfile and docker-compose files themselves
+Dockerfile*
+docker-compose*.yml
+docker-compose*.yaml
+
+# Readme
+*.md
