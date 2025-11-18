@@ -1,0 +1,12 @@
+services:
+  url-shortener:
+    build: .
+    ports:
+      - "${EXPOSED_PORT}:${INTERNAL_PORT}"
+    env_file:
+      - .env
+    environment:
+      REDIS_ADDR: ${REDIS_ADDR}
+      REDIS_PWD: ${REDIS_PWD}
+      INTERNAL_PORT: ${INTERNAL_PORT}
+      INTERNAL_ADDR: ${INTERNAL_ADDR}
