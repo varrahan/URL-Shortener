@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
 
 	"github.com/gin-gonic/gin"
 	"github.com/varrahan/url-shortener/internal/api/utils"
@@ -19,9 +18,6 @@ func main() {
 	api.RegisterRoutes(r)
 
 	port := utils.GetEnv("INTERNAL_PORT", "9000")
-	env := utils.GetAllEnv(".env")
-
-	log.Printf("%v", env)
 
 	err := r.Run(":" + port)
 	if err != nil {
