@@ -221,13 +221,3 @@ The project includes:
 ## License
 
 This project is open source and available under the MIT License.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Acknowledgments
-
-- Built with [Gin Web Framework](https://github.com/gin-gonic/gin)
-- Uses [go-redis](https://github.com/go-redis/redis) for Redis integration
-- Base58 encoding via [base58-go](https://github.com/itchyny/base58-go)
