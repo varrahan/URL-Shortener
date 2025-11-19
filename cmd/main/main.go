@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"github.com/gin-gonic/gin"
 	"github.com/varrahan/url-shortener/internal/api/utils"
 	"github.com/varrahan/url-shortener/pkg/api"
@@ -10,6 +9,8 @@ import (
 
 func main() {
 	utils.LoadEnv(".env")
+
+	//gin.SetMode(gin.ReleaseMode)
 
 	r := gin.Default()
 
