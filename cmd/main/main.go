@@ -10,7 +10,7 @@ import (
 func main() {
 	utils.LoadEnv(".env")
 
-	//gin.SetMode(gin.ReleaseMode)
+	gin.SetMode(gin.ReleaseMode)
 
 	r := gin.Default()
 
