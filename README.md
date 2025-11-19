@@ -60,7 +60,7 @@ A lightweight, high-performance URL shortening service built with Go, Gin, and R
    ```env
    REDIS_ADDR=localhost:6379
    INTERNAL_PORT=9000
-   INTERNAL_ADDR=http://localhost:9000/
+   INTERNAL_ADDR=http://localhost
    EXPOSED_PORT=9000
    ```
 
@@ -82,7 +82,7 @@ A lightweight, high-performance URL shortening service built with Go, Gin, and R
    ```env
    REDIS_ADDR=redis://redis:6379
    INTERNAL_PORT=9000
-   INTERNAL_ADDR=http://localhost:9000/
+   INTERNAL_ADDR=http://localhost
    EXPOSED_PORT=9000
    ```
 
@@ -189,7 +189,7 @@ console.log(data.short_url);
 |----------|-------------|---------|
 | `REDIS_ADDR` | Redis server address | `localhost:6379` |
 | `INTERNAL_PORT` | Port the service runs on | `9000` |
-| `INTERNAL_ADDR` | Base URL for short links | `http://0.0.0.0:9000/` |
+| `INTERNAL_ADDR` | Base URL for short links | `http://0.0.0.0` |
 | `EXPOSED_PORT` | External port (Docker) | `9000` |
 
 ## Configuration
