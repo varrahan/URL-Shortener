@@ -22,7 +22,10 @@ func CreateShortUrl(c *gin.Context) {
 
 	shortUrl := shortener.GenerateShortLink(creationRequest.LongUrl, creationRequest.UserId)
 	store.SaveUrlMapping(shortUrl, creationRequest.LongUrl, creationRequest.UserId)
-	host := utils.GetEnv("INTERNAL_ADDR", "0.0.0.0:9000")
+	
+	host_addr := utils.GetEnv("INTERNAL_ADDR", "0.0.0.0")
+	host_port := utils.GetEnv("INTERNAL_PORT", "9000")
+	host := host_addr + ":" + host_port 
 
 	c.JSON(200, gin.H{
 		"message":   "short url created successfully",
